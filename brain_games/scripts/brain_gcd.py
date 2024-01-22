@@ -9,8 +9,8 @@ def main():
     print('Find the greatest common divisor of given numbers.')
     while correct_answers != 3:
         true_answer = 0
-        first_number = random.randint(0, 100)
-        second_number = random.randint(0, 100)
+        first_number = random.randint(1, 100)
+        second_number = random.randint(1, 100)
         print(f'Question: {first_number} {second_number}')
         answer = input('Your answer: ')
         gcd = min(first_number, second_number)
