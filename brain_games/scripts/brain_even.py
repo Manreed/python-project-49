@@ -1,11 +1,11 @@
 import random
+from brain_games.cli import welcome_user
+from brain_games.result_of_game import result_of_game
 
 
 def main():
     correct_answers = 0
-    print('Welcome to the Brain Games!')
-    name = input('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while correct_answers != 3:
         question_number = random.randint(0, 100)
@@ -18,14 +18,11 @@ def main():
             correct_answers = 0
             if question_number % 2 == 0:
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'.")
-                print(f"Let's try again, {name}!")
                 break
             else:
                 print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'.")
-                print(f"Let's try again, {name}!")
                 break
-    if correct_answers == 3:
-        print(f'Congratulations, {name}!')
+    result_of_game(correct_answers, name)
 
 
 if __name__ == '__main__':
