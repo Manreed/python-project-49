@@ -3,4 +3,3 @@ def result_of_game(correct_answers, name):
         print(f'Congratulations, {name}!')
     else:
         print(f"Let's try again, {name}!")
-

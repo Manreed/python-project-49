@@ -2,9 +2,7 @@
 name = "brain-games"
 version = "0.1.0"
 description = "Игры разума - проект, состоящий из 5 мини-игр"
-authors = [
-	{name = 'Георгий', email = '"<kuman8443@gmail.com>"'}
-	]
+authors =['Георгий', '"<kuman8443@gmail.com>"']
 readme = "README.md"
 repository = "https://github.com/Manreed/python-project-49"
 packages = [

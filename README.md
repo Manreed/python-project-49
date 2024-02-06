@@ -11,7 +11,6 @@
     git clone git@github.com:Manreed/python-project-49.git
     pip install --user brain_games
 
-[![asciicast](https://asciinema.org/a/wtWfKZCUNKQbkm4tWLBdoCiat.svg)](https://asciinema.org/a/wtWfKZCUNKQbkm4tWLBdoCiat)
 
 
 brain-even:
