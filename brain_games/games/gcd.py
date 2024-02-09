@@ -10,7 +10,7 @@ def generation_question_and_answer():
     question = f'Question: {first_number} {second_number}'
     gcd = min(first_number, second_number)
     while true_answer == 0:
-        if max(first_number, second_number) % gcd == 0 and min(first_number, second_number) % gcd == 0:
+        if first_number % gcd == 0 and second_number % gcd == 0:
             true_answer = gcd
         else:
             gcd -= 1

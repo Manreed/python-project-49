@@ -14,6 +14,7 @@ def engine(game):
             correct_answers += 1
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer is '{true_answer}'")
+            print(f"'{answer}' is wrong answer ;(."
+                  f" Correct answer is '{true_answer}'")
             break
     result_of_game.result_of_game(correct_answers, name)

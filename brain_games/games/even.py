@@ -11,4 +11,3 @@ def generation_question_and_answer():
     else:
         true_answer = 'no'
     return question, true_answer
-
