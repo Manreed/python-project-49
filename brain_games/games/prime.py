@@ -5,7 +5,7 @@ first_sentence = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def generation_question_and_answer():
     number = random.randint(2, 100)
-    question = f'Question: {number}'
+    question = f'{number}'
     if is_prime(number):
         true_answer = 'yes'
     else:
