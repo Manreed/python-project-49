@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.1"
+version = "0.1.0"
 description = "Игры разума - проект, состоящий из 5 мини-игр"
 authors =['Георгий', '"<kuman8443@gmail.com>"']
 readme = "README.md"
