@@ -22,4 +22,3 @@ def is_prime(number):
             return False
 
     return True
-
