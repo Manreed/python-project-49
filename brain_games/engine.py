@@ -8,17 +8,17 @@ def launch_of_game(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(game.FIRST_SENTENCE)
+    print(game.RULES)
 
     for i in range(ROUNDS_COUNT):
 
-        question, true_answer = game.generation_question_and_answer()
+        question, correct_answer = game.get_question_and_answer()
         print('Question: ' + question)
         answer = prompt.string('Your answer: ')
 
-        if answer != str(true_answer):
+        if answer != str(correct_answer):
             return (f"'{answer}' is wrong answer ;(."
-                    f" Correct answer is '{true_answer}'\n"
+                    f" Correct answer is '{correct_answer}'\n"
                     f"Let's try again, {name}!")
 
         print('Correct!')

@@ -1,22 +1,23 @@
 import random
 
-FIRST_SENTENCE = 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
-def generation_question_and_answer():
+def get_question_and_answer():
 
-    array_lenght = random.randint(5, 10)
-    index_of_missed_element = random.randint(1, array_lenght - 1)
+    lenght = random.randint(5, 10)
+    index_of_missed_element = random.randrange(1, lenght)
     progression = random.randint(1, 10)
     start = random.randint(1, 100)
-    array_progression = [str(start)]
+    end = start + progression * lenght
 
-    for i in range(1, array_lenght):
-        array_progression.append(str(start + progression * i))
+    subsequence = list((range(start, end, progression)))
+    for i in range(0, len(subsequence)):
+        subsequence[i] = str(subsequence[i])
 
-    array_progression[index_of_missed_element] = '..'
+    correct_answer = subsequence[index_of_missed_element]
+    subsequence[index_of_missed_element] = '..'
 
-    question = " ".join(array_progression)
-    true_answer = start + progression * index_of_missed_element
+    question = " ".join(subsequence)
 
-    return question, true_answer
+    return question, correct_answer

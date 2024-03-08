@@ -1,20 +1,20 @@
 import random
 
-FIRST_SENTENCE = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
-def generation_question_and_answer():
+def get_question_and_answer():
 
     first_number = random.randint(1, 100)
     second_number = random.randint(1, 100)
     question = f'{first_number} {second_number}'
 
-    true_answer = find_gcd(first_number, second_number)
+    correct_answer = get_gcd(first_number, second_number)
 
-    return question, true_answer
+    return question, correct_answer
 
 
-def find_gcd(a, b):
+def get_gcd(a, b):
     answer = 0
     gcd = min(a, b)
     while answer == 0:
